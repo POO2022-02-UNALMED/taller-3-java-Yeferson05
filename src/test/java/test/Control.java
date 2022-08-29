@@ -27,6 +27,7 @@ public class Control {
 	}
 	public void enlazar(TV televi) {
 		this.tv = televi;
+		televi.setControl(this);
 		
 	}
 	public void seTv (TV tv) {
