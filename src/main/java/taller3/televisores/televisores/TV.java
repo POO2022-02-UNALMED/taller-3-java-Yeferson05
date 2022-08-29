@@ -73,12 +73,12 @@ public class TV {
 	}
 	
 	public void volumenUp() {
-		if (getEstado() == true && getVolumen()<= 7) {
+		if (getEstado() == true && getVolumen()>= 0 && getVolumen()<= 7) {
 			this.canal++;
 		}
 	}
 	public void volumenDown() {
-		if (getEstado() == true && getVolumen()>= 0) {
+		if (getEstado() == true &&  getVolumen()>= 0 && getVolumen()<= 7) {
 			this.canal--;
 		}
 	}
