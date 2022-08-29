@@ -62,12 +62,12 @@ public class TV {
 		this.estado = false;
 	}
 	public void canalUp() {
-		if (getEstado() == true && getCanal()<= 120) {
+		if (getEstado() == true && getCanal()>= 1 && getCanal()<= 120) {
 			this.canal++;
 		}
 	}
 	public void canalDown() {
-		if (getEstado() == true && getCanal()>= 120) {
+		if (getEstado() == true && getCanal()>= 1 && getCanal()<= 120) {
 			this.canal--;
 		}
 	}
@@ -78,7 +78,7 @@ public class TV {
 		}
 	}
 	public void volumenDown() {
-		if (getEstado() == true &&  getVolumen()>= 0 && getVolumen()<= 7) {
+		if (getEstado() == true && getVolumen()>= 0 && getVolumen()<= 7) {
 			this.canal--;
 		}
 	}
