@@ -37,8 +37,7 @@ public class TV {
 		return precio;
 	}
 	public void setVolumen (int volumen) {
-		//this.volumen = volumen;
-		if (estado == true && volumen <= 7) {
+		if (estado == true && volumen >= 0 && volumen <= 7) {
 			this.volumen = volumen;
 		}
 	}
@@ -46,7 +45,7 @@ public class TV {
 		return volumen;
 	}
 	public void setCanal (int canal) {
-		if (estado == true && canal <= 120) {
+		if (estado == true && canal >= 1 && canal <= 120) {
 			this.canal = canal;
 		}
 	}
